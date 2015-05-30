@@ -31,6 +31,7 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
         </dependency>
+      
     </dependencies>
 
     <profiles>
@@ -80,7 +81,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>1.9.0</version>
+                <version>1.10.1</version>
                 <configuration>
                     <testResultsTimestamp>false</testResultsTimestamp>
                     <overrideRootLogLevel>DEBUG</overrideRootLogLevel>
@@ -118,7 +119,7 @@
                     <dependency>
                         <groupId>kg.apc</groupId>
                         <artifactId>jmeter-plugins</artifactId>
-                        <version>1.0.0</version>
+                        <version>1.2.1</version>
                         <exclusions>
                             <!--
                                 Unfortunately some transitive dependencies cannot be found on mvncentral
@@ -174,7 +175,7 @@
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-analysis-maven-plugin</artifactId>
-                <version>1.0.4</version>
+                <version>1.10.1</version>
                 <configuration>
                     <source>${project.build.directory}/jmeter/results/SimpleWebservicePerformanceTest.jtl</source>
                 </configuration>
