@@ -12,66 +12,8 @@
         Example how to integrate jmeter tests in a maven build and how to automatically 
         generate graphs from the test results using the jmeter plugins CMDRunner. 
     </description>
-<<<<<<< HEAD
 <build>
    <plugins>
-=======
-
-  
-
-    <dependencies>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-        </dependency>
-    </dependencies>
-
-    <profiles>
-        <profile>
-            <id>jenkins</id>
-            <properties>
-                <performancetest.webservice.host>tomcat7-example-webapp.mlex.cloudbees.net</performancetest.webservice.host>
-                <performancetest.webservice.port>80</performancetest.webservice.port>
-                <performancetest.threadCount>5</performancetest.threadCount>
-                <performancetest.loopCount>5</performancetest.loopCount>
-            </properties>
-        </profile>
-        <profile>
-            <id>embedded-jetty</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.mortbay.jetty</groupId>
-                        <artifactId>jetty-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>start-jetty</id>
-                                <goals>
-                                    <goal>start</goal>
-                                </goals>
-                                <phase>pre-integration-test</phase>
-                                <configuration>
-                                    <daemon>true</daemon>
-                                </configuration>
-                            </execution>
-                            <execution>
-                                <id>stop-jetty</id>
-                                <goals>
-                                    <goal>stop</goal>
-                                </goals>
-                                <phase>post-integration-test</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
-    <build>
-        <plugins>
->>>>>>> da6e5165edd577f8a78584125784992b8dc0680d
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
