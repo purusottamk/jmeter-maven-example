@@ -13,17 +13,7 @@
         generate graphs from the test results using the jmeter plugins CMDRunner. 
     </description>
 
-    <properties>
-        <jetty.port>8080</jetty.port>
-        <jetty.stopPort>8080</jetty.stopPort>
-        <performancetest.webservice.host>localhost</performancetest.webservice.host>
-        <performancetest.webservice.port>${jetty.port}</performancetest.webservice.port>
-        <performancetest.webservice.path>/</performancetest.webservice.path>
-        <performancetest.connectTimeout>1000</performancetest.connectTimeout>
-        <performancetest.responseTimeout>3000</performancetest.responseTimeout>
-        <performancetest.threadCount>20</performancetest.threadCount>
-        <performancetest.loopCount>10</performancetest.loopCount>
-    </properties>
+  
 
     <dependencies>
         <dependency>
