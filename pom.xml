@@ -14,8 +14,8 @@
     </description>
 
     <properties>
-        <jetty.port>9097</jetty.port>
-        <jetty.stopPort>19097</jetty.stopPort>
+        <jetty.port>8080</jetty.port>
+        <jetty.stopPort>8080</jetty.stopPort>
         <performancetest.webservice.host>localhost</performancetest.webservice.host>
         <performancetest.webservice.port>${jetty.port}</performancetest.webservice.port>
         <performancetest.webservice.path>/</performancetest.webservice.path>
